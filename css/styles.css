@@ -631,8 +631,14 @@ mark {
     grid-template-columns: 1fr;
   }
 
+  /* en el celular la foto va primero (order: -1) para que se vea apenas uno entra */
+  .hero__contenido {
+    gap: 2rem;
+  }
+
   .foto-perfil {
-    max-width: 260px;
+    order: -1;
+    max-width: 200px;
   }
 
   .datos-rapidos {

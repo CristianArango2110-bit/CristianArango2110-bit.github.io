@@ -383,9 +383,22 @@ mark {
 }
 
 .hero__saludo {
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: var(--color-primario-oscuro);
+}
+
+/* rayita antes del texto */
+.hero__saludo::before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  background: var(--color-primario);
 }
 
 .hero__titulo {

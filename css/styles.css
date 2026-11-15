@@ -456,7 +456,7 @@ mark {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 60% 30%;
+  object-position: 40% 30%;
   border: 1px solid var(--color-texto);
   padding: 6px;
   background: var(--color-superficie);

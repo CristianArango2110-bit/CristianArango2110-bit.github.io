@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-  <rect width="400" height="400" fill="#ffe3d9"/>
-  <circle cx="200" cy="160" r="78" fill="#1f1d2b"/>
-  <path d="M60 400c10-90 70-140 140-140s130 50 140 140z" fill="#1f1d2b"/>
-  <text x="200" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffd166" text-anchor="middle">CA</text>
-</svg>

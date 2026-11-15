@@ -6,10 +6,10 @@
   <meta name="description" content="Hoja de vida de Cristian Javier Arango Rubiano, estudiante de Ingeniería de Software enfocado en desarrollo backend.">
   <title>Cristian Arango | Hoja de vida</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <!-- Fuentes: Poppins para los títulos, Inter para el texto -->
+  <!-- Fuentes: IBM Plex Sans para el texto y IBM Plex Mono para los detalles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
   <!-- Menú (lo copié igual en todas las páginas) -->
   <header class="encabezado">
     <div class="contenedor encabezado__contenido">
-      <a href="index.html" class="logo">Cristian<span>.</span></a>
+      <a href="index.html" class="logo">cristian<span>.</span>arango</a>
       <nav aria-label="Menú principal">
         <button class="menu-boton" id="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
         <ul class="menu" id="menu">
@@ -36,16 +36,16 @@
       <div class="contenedor hero__contenido">
         <div>
           <p class="hero__saludo">Desarrollador backend en formación</p>
-          <h1 class="hero__titulo">Cristian <span class="resaltado">Arango</span></h1>
+          <h1 class="hero__titulo">Cristian Arango <span class="resaltado">Rubiano</span></h1>
           <p class="hero__texto">
-            Estudiante de <strong>Ingeniería de Software</strong> en Bogotá, enfocado en el
-            <mark>desarrollo backend</mark> con <strong>Java</strong> y <strong>Python</strong>.
-            Antes de programar trabajé más de tres años en <em>soporte técnico</em>, así que sé
-            lo que pasa cuando un sistema falla y hay alguien esperando una solución.
+            Estudio <strong>Ingeniería de Software</strong> en UCompensar y me estoy enfocando en
+            <mark>backend</mark> con <strong>Java</strong> y <strong>Python</strong>.
+            Antes de programar pasé más de tres años en <em>soporte técnico</em>, resolviendo
+            fallas del otro lado de la pantalla.
           </p>
           <div class="hero__acciones">
             <a href="experiencia.html" class="boton boton--primario">Ver mi experiencia</a>
-            <a href="contacto.html" class="boton boton--secundario">Hablemos</a>
+            <a href="contacto.html" class="boton boton--secundario">Contactarme</a>
           </div>
         </div>
 
@@ -57,74 +57,64 @@
       </div>
     </section>
 
-    <!-- Datos rápidos -->
+    <!-- Datos rápidos: cada dato es un div y adentro dos span -->
     <section class="contenedor">
       <div class="datos-rapidos">
         <div class="dato">
-          <span class="dato__valor">UCompensar</span>
-          <span class="dato__etiqueta">Ingeniería de Software</span>
+          <span class="dato__etiqueta">Estudio</span>
+          <span class="dato__valor">Ing. de Software</span>
         </div>
         <div class="dato">
-          <span class="dato__valor">Backend</span>
-          <span class="dato__etiqueta">Java · Spring Boot · Python</span>
+          <span class="dato__etiqueta">Enfoque</span>
+          <span class="dato__valor">Java · Python</span>
         </div>
         <div class="dato">
-          <span class="dato__valor">Inglés C1</span>
-          <span class="dato__etiqueta">Certificado EF SET</span>
+          <span class="dato__etiqueta">Inglés</span>
+          <span class="dato__valor">C1 (EF SET)</span>
         </div>
         <div class="dato">
-          <span class="dato__valor">+3 años</span>
-          <span class="dato__etiqueta">En soporte técnico</span>
+          <span class="dato__etiqueta">Experiencia</span>
+          <span class="dato__valor">+3 años en soporte</span>
         </div>
       </div>
     </section>
 
     <!-- Sobre mí -->
-    <section class="seccion">
+    <section class="seccion seccion--sin-borde">
       <div class="contenedor">
         <h2 class="seccion__titulo">Sobre mí</h2>
-        <p class="seccion__intro">
-          Me considero una persona curiosa que aprende haciendo. Estoy construyendo mi camino como
-          <strong>desarrollador backend junior</strong>: practico a diario, hago proyectos de portafolio y
-          aplico en ellos lo que veo en la universidad.
-        </p>
+        <div class="sobre-mi">
+          <div>
+            <p>
+              Llegué a la programación después de trabajar en soporte técnico en Teleperformance,
+              Sutherland y EXL. Todos los días veía problemas de cuentas, dispositivos y plataformas,
+              y en algún momento me empezó a interesar más <strong>cómo funcionaban esos sistemas por dentro</strong>
+              que solo resolver el caso.
+            </p>
+            <p>
+              En 2025 empecé Ingeniería de Software y ahora estoy enfocado en el backend. Me gusta entender
+              bien el problema antes de escribir código, algo que me quedó de diagnosticar fallas con
+              un usuario esperando al otro lado.
+            </p>
+          </div>
 
-        <div class="tarjetas">
-          <article class="tarjeta">
-            <img class="tarjeta__icono" src="img/icono-codigo.svg" alt="">
-            <h3 class="tarjeta__titulo">Desarrollo</h3>
-            <p>Lógica de programación y estructuras de datos con Python y Java. Hoy profundizo en <strong>Spring Boot</strong>.</p>
-          </article>
-          <article class="tarjeta">
-            <img class="tarjeta__icono" src="img/icono-pruebas.svg" alt="">
-            <h3 class="tarjeta__titulo">Pruebas de software</h3>
-            <p>Me interesa que el código no solo corra, sino que esté <em>probado</em> y sea fácil de mantener.</p>
-          </article>
-          <article class="tarjeta">
-            <img class="tarjeta__icono" src="img/icono-soporte.svg" alt="">
-            <h3 class="tarjeta__titulo">Soporte técnico</h3>
-            <p>He diagnosticado fallas, gestionado incidentes y explicado soluciones a usuarios por chat, teléfono y correo.</p>
-          </article>
-          <article class="tarjeta">
-            <img class="tarjeta__icono" src="img/icono-idiomas.svg" alt="">
-            <h3 class="tarjeta__titulo">Idiomas</h3>
-            <p>Tengo inglés <strong>C1</strong> certificado con EF SET, así que puedo trabajar con equipos y documentación en inglés sin problema.</p>
-          </article>
+          <div>
+            <h3 class="seccion__titulo">Ahora mismo</h3>
+            <ul class="ahora">
+              <li><strong>Aprendiendo</strong> Java con Spring Boot</li>
+              <li><strong>Cursando</strong> Pruebas de Software II y Estructura de Datos II</li>
+              <li><strong>Construyendo</strong> proyectos para mi portafolio</li>
+              <li><strong>Buscando</strong> prácticas o un primer cargo como desarrollador</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Cuadro naranja para que me contacten -->
-    <section class="contenedor">
-      <div class="llamado">
-        <h2>¿Buscas un desarrollador con ganas de aprender?</h2>
-        <p>Conoce mi formación o escríbeme directamente.</p>
-        <div class="hero__acciones hero__acciones--centro">
-          <a href="formacion.html" class="boton">Mi formación</a>
-          <a href="contacto.html" class="boton">Contactarme</a>
-        </div>
-      </div>
-    </section>
+    <nav class="contenedor siguiente" aria-label="Siguiente página">
+      <span>Siguiente</span>
+      <a href="formacion.html">Formación →</a>
+    </nav>
   </main>
 
   <!-- Footer -->

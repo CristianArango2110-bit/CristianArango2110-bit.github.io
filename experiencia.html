@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experiencia laboral, proyectos y habilidades de Cristian Arango.">
+  <title>Experiencia | Cristian Arango</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a href="index.html" class="logo">Cristian<span>.</span></a>
+      <nav aria-label="Menú principal">
+        <button class="menu-boton" id="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li><a href="formacion.html" class="menu__enlace">Formación</a></li>
+          <li><a href="experiencia.html" class="menu__enlace menu__enlace--activo">Experiencia</a></li>
+          <li><a href="contacto.html" class="menu__enlace">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Experiencia 💼</h1>
+        <p>Mi recorrido laboral, los proyectos en los que he participado y las tecnologías que manejo.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia laboral -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Experiencia laboral</h2>
+        <ol class="linea-tiempo">
+          <li class="linea-tiempo__item">
+            <span class="linea-tiempo__fecha">Actualidad</span>
+            <h3 class="linea-tiempo__titulo">Marketing y creación de contenido</h3>
+            <span class="linea-tiempo__lugar">Edición de video y contenido digital</span>
+            <ul>
+              <li>Edición de video para redes sociales y campañas.</li>
+              <li>Planeación de contenido pensando en <strong>qué necesita el público</strong>.</li>
+              <li>Trabajo con tiempos de entrega y retroalimentación de clientes.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Proyectos</h2>
+        <p class="seccion__intro">Proyectos reales y académicos donde aplico lo que aprendo.</p>
+
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img class="tarjeta__icono" src="img/icono-base-datos.svg" alt="">
+            <h3 class="tarjeta__titulo">Project Tracker — 3Dvinci</h3>
+            <p>Plataforma web para un estudio de visualización 3D que organiza el seguimiento de sus proyectos.</p>
+            <p>
+              <span class="chip">React + Vite</span>
+              <span class="chip">PHP 8</span>
+              <span class="chip">MySQL</span>
+            </p>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta__icono" src="img/icono-codigo.svg" alt="">
+            <h3 class="tarjeta__titulo">Esta hoja de vida web</h3>
+            <p>Sitio con varias páginas enlazadas, hecho a mano con HTML, CSS y JavaScript y publicado en GitHub Pages.</p>
+            <p>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip chip--naranja">JavaScript</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Habilidades</h2>
+        <p class="seccion__intro">Prefiero ser honesto con mi nivel: así es más fácil saber en qué puedo aportar desde ya.</p>
+
+        <div class="tabla-contenedor">
+          <table class="tabla">
+            <caption>Tecnologías y nivel actual</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tecnología</th>
+                <th scope="col">Nivel</th>
+                <th scope="col">Dónde la he usado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Python</strong></td>
+                <td>Básico</td>
+                <td>Cursos de la universidad (estructuras de datos y pruebas)</td>
+              </tr>
+              <tr>
+                <td><strong>Java</strong></td>
+                <td>Básico <small>(profundizando con Spring Boot)</small></td>
+                <td>Estudio autónomo y ruta backend</td>
+              </tr>
+              <tr>
+                <td><strong>PHP y MySQL</strong></td>
+                <td>Básico</td>
+                <td>Project Tracker 3Dvinci</td>
+              </tr>
+              <tr>
+                <td><strong>HTML y CSS</strong></td>
+                <td>En aprendizaje</td>
+                <td>Este sitio web</td>
+              </tr>
+              <tr>
+                <td><strong>Git y GitHub</strong></td>
+                <td>Básico</td>
+                <td>Control de versiones y publicación con GitHub Pages</td>
+              </tr>
+              <tr>
+                <td><strong>Edición de video</strong></td>
+                <td>Profesional</td>
+                <td>Trabajo en marketing y creación de contenido</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Idiomas -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Idiomas</h2>
+        <div class="tabla-contenedor">
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th scope="col">Idioma</th>
+                <th scope="col">Nivel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Español</td>
+                <td>Nativo</td>
+              </tr>
+              <tr>
+                <td>Inglés</td>
+                <td>Bilingüe</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"><small>Puedo trabajar con documentación y equipos en inglés.</small></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor">
+      <div class="llamado">
+        <h2>¿Te interesa mi perfil?</h2>
+        <p>Déjame un mensaje y te respondo lo antes posible.</p>
+        <a href="contacto.html" class="boton">Ir a contacto →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <p>&copy; <span id="anio">2026</span> Cristian Javier Arango Rubiano</p>
+      <ul class="pie__redes">
+        <li><a href="https://github.com/CristianArango2110-bit" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/cristian-arango-92153b2a1/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

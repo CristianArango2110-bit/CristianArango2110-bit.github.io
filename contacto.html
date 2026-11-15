@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto de Cristian Arango.">
+  <title>Contacto | Cristian Arango</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a href="index.html" class="logo">Cristian<span>.</span></a>
+      <nav aria-label="Menú principal">
+        <button class="menu-boton" id="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li><a href="formacion.html" class="menu__enlace">Formación</a></li>
+          <li><a href="experiencia.html" class="menu__enlace">Experiencia</a></li>
+          <li><a href="contacto.html" class="menu__enlace menu__enlace--activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Hablemos ✉️</h1>
+        <p>¿Tienes una vacante, un proyecto o una pregunta? Escríbeme por aquí.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor contacto__grid">
+
+        <!-- Formulario con GET: los datos se van a gracias.html pegados en la URL.
+             Usé GET porque GitHub Pages no tiene servidor, y para POST necesitaría uno (tipo PHP) -->
+        <form class="formulario" action="gracias.html" method="get">
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Gómez" required minlength="3">
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="ana@empresa.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo del mensaje</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Oferta laboral">Oferta laboral</option>
+              <option value="Proyecto">Proyecto</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame en qué te puedo ayudar" required></textarea>
+          </div>
+
+          <button type="submit" class="boton boton--primario">Enviar mensaje</button>
+          <p class="nota">Los campos marcados son obligatorios. Tus datos solo se usan para responderte.</p>
+        </form>
+
+        <aside>
+          <div class="tarjeta">
+            <h3 class="tarjeta__titulo">También me encuentras en</h3>
+            <ul>
+              <li><a href="https://github.com/CristianArango2110-bit" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/cristian-arango-92153b2a1/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+            <p>📍 Bogotá, Colombia</p>
+            <p>Disponible para <strong>prácticas</strong> y cargos <strong>junior</strong>, presenciales o remotos.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <p>&copy; <span id="anio">2026</span> Cristian Javier Arango Rubiano</p>
+      <ul class="pie__redes">
+        <li><a href="https://github.com/CristianArango2110-bit" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/cristian-arango-92153b2a1/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Gracias! | Cristian Arango</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a href="index.html" class="logo">Cristian<span>.</span></a>
+      <nav aria-label="Menú principal">
+        <button class="menu-boton" id="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li><a href="formacion.html" class="menu__enlace">Formación</a></li>
+          <li><a href="experiencia.html" class="menu__enlace">Experiencia</a></li>
+          <li><a href="contacto.html" class="menu__enlace">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor gracias">
+    <img src="img/enviado.svg" alt="Ícono de mensaje enviado">
+    <h1>¡Gracias, <span id="nombre-visitante">visitante</span>!</h1>
+    <p>Recibí tu mensaje. Te responderé lo antes posible.</p>
+
+    <!-- Empieza escondido, gracias.js lo muestra si llegaron datos -->
+    <div class="tarjeta resumen-mensaje oculto" id="resumen">
+      <h3 class="tarjeta__titulo">Resumen de lo que enviaste</h3>
+      <p><strong>Correo:</strong> <span id="dato-correo"></span></p>
+      <p><strong>Motivo:</strong> <span id="dato-motivo"></span></p>
+      <p><strong>Mensaje:</strong> <span id="dato-mensaje"></span></p>
+    </div>
+
+    <a href="index.html" class="boton boton--primario">Volver al inicio</a>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <p>&copy; <span id="anio">2026</span> Cristian Javier Arango Rubiano</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gracias.js"></script>
+</body>
+</html>

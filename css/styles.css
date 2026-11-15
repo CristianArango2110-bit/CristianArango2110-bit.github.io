@@ -396,7 +396,7 @@ mark {
 
 .hero__contenido {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 3.5rem;
   align-items: end;
 }
@@ -447,9 +447,13 @@ mark {
   margin-top: 2rem;
 }
 
-/* Mi foto: rectangular con un borde delgado */
+/* Mi foto: rectangular con un borde delgado.
+   Con order: -1 sale primero aunque en el HTML esté después del texto:
+   en el computador queda a la izquierda mirando hacia mi nombre,
+   y en el celular queda arriba */
 .foto-perfil {
   margin: 0;
+  order: -1;
 }
 
 .foto-perfil img {
@@ -631,13 +635,11 @@ mark {
     grid-template-columns: 1fr;
   }
 
-  /* en el celular la foto va primero (order: -1) para que se vea apenas uno entra */
   .hero__contenido {
     gap: 2rem;
   }
 
   .foto-perfil {
-    order: -1;
     max-width: 200px;
   }
 
